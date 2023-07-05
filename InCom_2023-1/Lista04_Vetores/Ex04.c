@@ -4,12 +4,26 @@ lidos.*/
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
+    int n, i;
 
-int n, vetor[n];
+    printf("Informe o tamanho do Vetor: ");
+        scanf("%d", &n);
+    
+    int vetor[n];
 
-printf("A");
+    for (i = 0; i < n; i++)
+    {
+        printf("Informe o numero %d: \n", i+1);
+            scanf("%d", &vetor[i]);
+    }
+    for ( i = i; i > -1; i--)
+    {
+        printf("%d \t", vetor[i]);
+    }
 
-
-    return 0;
+/*Na saida do meu cod, ele ta mostrando um 0 ou o endereço da memoria.
+Mas quando eu uso o Debug, ele mostra apenas 5 elementos no vetor. Não sei como tirar esse 0 do início.*/
+    return 1;
 }

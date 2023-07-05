@@ -41,13 +41,5 @@ int main()
     printf("Quantidade de numeros maiores que %d = %d", k, soma);
     
 
-
-
-
-
-
-
-
-
     return 0;
 }
