@@ -1,0 +1,25 @@
+Projeto Agenda
+
+Projeto Agenda
+
+
+
+O programa em C deve conter: funções, strings, structs e as informações devem ser lidas e gravadas em arquivos.
+
+
+
+? Agenda
+
+O projeto agenda consiste em criar um código em C que permita realizar as seguintes funcionalidades:
+
+Cadastrar um novo contato (Nome, Telefone e Email);
+
+Pesquisar por um contato (o resultado da pesquisa deve aparecer todas as informações do contato);
+
+Editar informações de um contato;
+
+Excluir um contato;
+
+Se desejar, você pode incluir outras funcionalidades na sua agenda. O objetivo será treinar os conhecimentos aprendidos durante o curso.
+
+Será fornecido um programa modelo para você se inspirar. Qualquer dúvida, entre em contato. Boa programação.

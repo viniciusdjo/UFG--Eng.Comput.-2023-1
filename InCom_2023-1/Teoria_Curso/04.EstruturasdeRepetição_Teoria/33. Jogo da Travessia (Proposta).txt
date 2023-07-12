@@ -1,0 +1,19 @@
+Jogo da Travessia (Proposta)
+Jogo da Travessia
+
+
+
+N�o sei se voc� conhece alguma vers�o desse joguinho da travessia,
+mas a que vou trazer hoje aqui ser� a do Lobo, Ovelha e Couve.
+
+
+
+COMO JOGAR:
+
+Temos um barco que o nosso fazendeiro utiliza para atravessar o rio. 
+Por�m, ele s� pode levar um item por vez nessa travessia. 
+Nesse momento, ele precisa atravessar uma ovelha, um lobo e uma couve.
+ Por�m,
+1 Se o lobo ficar sozinho em um lado do rio, enquanto o fazendeiro est� do outro lado, o lobo come a ovelha.
+
+2 Se a ovelha ficar sozinha com a couve, enquanto o fazendeiro est� do outro lado, a ovelha come o couve.

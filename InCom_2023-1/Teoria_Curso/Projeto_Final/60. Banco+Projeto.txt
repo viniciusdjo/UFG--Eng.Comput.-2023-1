@@ -1,0 +1,290 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+//Protótipo de Funções
+int Programa_para_Arquivo(void);
+int Arquivo_para_Programa(void);
+void Menu_Inicial(void);
+void Login_Cliente(void);
+void Menu_Cliente(int conta);
+void Cadastro_Cliente(void);
+int	Verificacao_Arquivo(void);
+int Verificacao_Cliente(int conta,char *senha);
+void Sacar(int posicao);
+void Depositar(int posicao);
+float Saldo(int posicao);
+int Buscar_Posicao(int conta);
+int Verificacao_Conta(int conta);
+//----------------------
+//Structs
+struct Cliente{
+	char nome[100];
+	int numero_conta;
+	float saldo;
+	char senha[30];
+};
+//----------------------
+//Variáveis Globais
+FILE *arquivo;
+struct Cliente Usuario[100];
+int contador=0;
+//----------------------
+
+int main(){	
+	Menu_Inicial();
+	
+	return 0;
+}
+
+//Funções
+int Verificacao_Arquivo(int escolha){
+	if(escolha==1)//caso eu queira reescrever o arquivo
+	arquivo=fopen("Banco.txt","w");
+	else if(escolha==2)//caso eu queira ler as informações do arquivo
+	arquivo=fopen("Banco.txt","a+");
+	
+	if(arquivo==NULL)
+		return 0;
+	else
+		return 1;
+	//Retornar 0 indica que deu erro na abertura, caso contrário, retorna 1
+}
+//-------------------------------------------
+int Arquivo_para_Programa(void){
+	if(Verificacao_Arquivo(2)){
+		rewind(arquivo);
+		while(fscanf(arquivo,"%99[^-]-%d-%f-%29[^\n]\n",Usuario[contador].nome,&Usuario[contador].numero_conta,&Usuario[contador].saldo,Usuario[contador].senha)!=EOF){
+			contador++;
+			}
+	fclose(arquivo);
+	return 1;			
+	}
+	else
+		return 0;
+	//Retornar 0 indica que deu erro na abertura, caso contrário, retorna 1
+}
+//-------------------------------------------
+int Programa_para_Arquivo(void){
+	int contador1=0;
+	if(Verificacao_Arquivo(1)){
+		while(contador1<contador){
+			fprintf(arquivo,"%s-%d-%.2f-%s\n",Usuario[contador1].nome,Usuario[contador1].numero_conta,Usuario[contador1].saldo,Usuario[contador1].senha);
+			contador1++;
+		}
+		fclose(arquivo);
+		return 1;
+	}
+	else
+		return 0;
+}
+//-------------------------------------------
+void Menu_Inicial(void){
+	int escolha;
+	
+	if(Arquivo_para_Programa()){	
+	do{
+	system("cls");
+	printf("\n\t\tBEM VINDO AO BANCO CSACIONAL\n");
+	printf("\n1.LOGIN CLIENTE\n2.CADASTRO DE CLIENTE\n3.SAIR\nDigite sua opcao: ");
+		scanf("%d",&escolha);
+	
+	switch(escolha){
+		case 1:
+			Login_Cliente();
+			break;
+		case 2:
+			Cadastro_Cliente();
+			break;
+		case 3:
+			break;
+		default:
+			printf("\nEscolha invalida! Tente novamente!\n");
+			system("pause");
+			break;		
+	}
+	
+	}while(escolha!=3);
+	
+	system("cls");
+		printf("Obrigado por usar o nosso programa!Volte sempre!");
+		
+	Programa_para_Arquivo();	
+}
+	else
+		printf("Sistema indisponivel!");		
+}
+
+//-------------------------------------------
+void Login_Cliente(void){
+	int escolha,conta;
+	char senha[30];
+	
+	do{
+	system("cls");
+	printf("\n\t\tBANCO CSACIONAL\n");
+		
+	printf("\n\nDigite o numero da conta: ");
+		scanf("%d",&conta);
+			fflush(stdin);
+	printf("\n\nDigite sua senha: ");
+		scanf("%29[^\n]",senha);
+	if(Verificacao_Cliente(conta,senha)){
+		Menu_Cliente(conta);
+		break;
+	}
+	else{
+		printf("\nDados invalidos!\nDigite <1> para digitar novamente ou <0> para sair: ");
+			scanf("%d",&escolha);
+	}	
+	}while(escolha==1);
+}
+//-------------------------------------------
+int Verificacao_Cliente(int conta,char *senha){
+	int contador1;
+	
+	for(contador1=0;contador1<contador;contador1++){
+		if(conta==Usuario[contador1].numero_conta && (strcmp(Usuario[contador1].senha,senha))==0 )
+			return 1;		
+	}
+	return 0;
+}
+//-------------------------------------------
+void Menu_Cliente(int conta){
+	int escolha;
+	do{
+		system("cls");
+		printf("\n\t\tBANCO CSACIONAL\n");
+		printf("\n\n1.Sacar\n2.Depositar\n3.Visualizar Dados\n4.Sair\nDigite sua opcao: ");
+			scanf("%d",&escolha);
+		switch(escolha){
+			case 1:
+				Sacar(Buscar_Posicao(conta));
+				break;
+			case 2:
+				Depositar(Buscar_Posicao(conta));
+				break;
+			case 3:
+				Saldo(Buscar_Posicao(conta));
+				break;
+			case 4:
+				break;
+			default:
+				printf("\nEscolha invalida! Tente novamente!\n");
+				system("pause");				
+		}
+	}while(escolha!=4);
+}
+//-------------------------------------------
+void Sacar(int posicao){
+	int escolha=1;
+	float valor;
+	do{
+		system("cls");
+		printf("\n\t\tBANCO CSACIONAL\n");
+		printf("\nDigite <0> para sair\nSaldo Atual: R$%.2f\nQuanto deseja sacar: R$",Usuario[posicao].saldo);
+			scanf("%f",&valor);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+		if(valor>Usuario[posicao].saldo){
+			printf("\nSaldo insuficiente! Tente outro valor!\n");
+			system("pause");
+		}
+		else if((escolha=valor)!=0){
+			Usuario[posicao].saldo-=valor;
+			printf("\nOperacao realizada com sucesso!\nDigite <1> para repetir ou <0> para sair: ");
+				scanf("%d",&escolha);
+		}
+			
+	}while(escolha!=0);
+}
+//-------------------------------------------
+void Depositar(int posicao){
+	int escolha;
+	float valor;
+	do{
+		system("cls");
+		printf("\n\t\tBANCO CSACIONAL\n");
+		
+		printf("\nDigite <0> para sair\n\nQuanto deseja depositar: R$");
+			scanf("%f",&valor);
+		
+		if((escolha=valor)!=0){
+			Usuario[posicao].saldo+=valor;
+			printf("\nOperacao realizada com sucesso!\nDigite <1> para repetir ou <0> para sair: ");
+				scanf("%d",&escolha);
+		}
+}while(escolha!=0);
+}
+//-------------------------------------------
+float Saldo(int posicao){
+		system("cls");
+		printf("\n\t\tBANCO CSACIONAL\n");
+		printf("\n\nNome: %s",Usuario[posicao].nome);
+		printf("\nSenha: %s",Usuario[posicao].senha);
+		printf("\nSaldo: R$%.2f\n",Usuario[posicao].saldo);
+		system("pause");
+		
+		return Usuario[posicao].saldo;
+}
+//-------------------------------------------
+int Buscar_Posicao(int conta){
+	int contador1;
+	for(contador1=0;contador1<contador;contador1++){
+		if(conta==Usuario[contador1].numero_conta)
+			return contador1;
+	}
+	return 0;
+}
+//-------------------------------------------
+void Cadastro_Cliente(void){
+	int conta,auxiliar=0,escolha;
+	float saldo;
+	char nome[100],senha[30];
+	do{
+		auxiliar=0;
+		system("cls");
+		printf("\n\t\tBANCO CSACIONAL\n");
+		printf("\n\nConta: ");
+			scanf("%d",&conta);
+					
+		if(Verificacao_Conta(conta))
+			auxiliar=1;	
+			fflush(stdin);
+		printf("\nNome: ");
+			scanf("%99[^\n]",nome);
+			fflush(stdin);
+		printf("\nSenha: ");
+			scanf("%29[^\n]",senha);
+		printf("\nSaldo: R$");
+			scanf("%f",&saldo);	
+		
+		if(auxiliar==1){
+			printf("\nConta ja existente! Cadastre com outro numero!\nDigite <0> para sair ou <1> para tentar novamente:");
+				scanf("%d",&escolha);
+		}			
+		else{
+			printf("\nConta: %d\nNome: %s\nSenha: %s\nSaldo: R$%.2f\n\n1.CADASTRAR\n2.INSERIR NOVOS DADOS\n3.SAIR\nDigite sua opcao: ",conta,nome,senha,saldo);
+				scanf("%d",&escolha);
+			if(escolha==1){
+				strcpy(Usuario[contador].nome,nome);
+				Usuario[contador].numero_conta=conta;
+				Usuario[contador].saldo=saldo;
+				strcpy(Usuario[contador].senha,senha);
+				contador++;
+				printf("\n\nDados cadastrados com sucesso\nDigite <0> para sair ou <1> para cadastrar um novo cliente: ");
+					scanf("%d",&escolha);
+			}	
+		}
+		
+	}while(escolha!=0 && escolha!=3);
+}
+//-------------------------------------------
+int Verificacao_Conta(int conta){
+	int contador1;
+	for(contador1=0;contador1<contador;contador1++){
+		if(conta==Usuario[contador1].numero_conta)
+			return 1;
+	}
+	return 0;
+	//Se retornar 1 quer dizer que já existe uma conta cadastrada com esse número
+}
+//-------------------------------------------
