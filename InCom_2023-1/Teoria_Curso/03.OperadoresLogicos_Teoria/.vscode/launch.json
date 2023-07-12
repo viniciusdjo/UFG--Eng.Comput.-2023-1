@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/marinho/Documents/GitHub/UFG--Eng.Comput2023-1/InCom_2023-1/OperacoesMatematicas_Teoria",
-      "program": "/home/marinho/Documents/GitHub/UFG--Eng.Comput2023-1/InCom_2023-1/OperacoesMatematicas_Teoria/build/Debug/outDebug",
+      "cwd": "/home/marinho/Documents/GitHub/UFG--Eng.Comput2023-1/InCom_2023-1/Teoria_Curso/03.OperadoresLogicos_Teoria",
+      "program": "/home/marinho/Documents/GitHub/UFG--Eng.Comput2023-1/InCom_2023-1/Teoria_Curso/03.OperadoresLogicos_Teoria/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
