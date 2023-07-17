@@ -10,7 +10,7 @@ int main(){
     for(i = 0; i < 2; i++){
         for(j = 0; j < 2; j++){
             printf("Matriz A = Digite o elemento da linha %d e coluna %d: ", i+1, j+1);
-                scanf("%d", &A[2][2]);
+                scanf("%d", &A[i][j]);
         }
     }
 
@@ -18,7 +18,7 @@ int main(){
     for(i = 0; i < 2; i++){
         for(j = 0; j < 2; j++){
             printf("Matriz B = Digite o elemento da linha %d e coluna %d: ", i+1, j+1);
-                scanf("%d", &B[2][2]);
+                scanf("%d", &B[i][j]);
         }
     }
 
