@@ -1,9 +1,9 @@
 public class TestBook {
     public static void main(String[] args) {
         // Instantiating the object
-        Book book1 = new Book();
-        Book book2 = new Book();
-        Book book3 = new Book();
+        Book book1 = new Book("Spare", "Prince Harry The Duke of Sussex", "Random House", 2023);
+        Book book2 = new Book("Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones ", "James Clear", "Avery", 2018);
+        Book book3 = new Book("Lessons in Chemistry: A Novel", "Bonnie Garmus", "Doubleday", 2022);
 
         //Sets
             //Title

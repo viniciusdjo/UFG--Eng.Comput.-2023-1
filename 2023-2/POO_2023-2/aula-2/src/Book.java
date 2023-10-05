@@ -6,6 +6,13 @@ public class Book {
     private String publishingCompany;
 
 //    Methods
+    //Constructor
+    public Book(String title, String author, String publishingCompany, int year) {
+        this.title = title;
+        this.author = author;
+        this.publishingCompany = publishingCompany;
+        this.year = year;
+    }
     //toString
     @Override
     public String toString(){
