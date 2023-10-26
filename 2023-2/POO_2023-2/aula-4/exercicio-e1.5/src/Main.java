@@ -18,5 +18,6 @@ public class Main {
         forms [2] = Triangulo;
 
         System.out.println(calculateTotalArea(forms));
+
     }
 }
