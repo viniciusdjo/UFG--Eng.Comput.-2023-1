@@ -3,7 +3,7 @@ package subclasses;
 import model.Draw;
 import model.Figure;
 
-public abstract class Square extends Figure implements Draw {
+public class Square extends Figure implements Draw {
     private double side;
 
 //    Constructor

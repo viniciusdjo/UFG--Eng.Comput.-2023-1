@@ -49,12 +49,12 @@ public class Triangle extends Figure implements Draw {
 
     @Override
     public double calculateArea() {
-        return side1 + side2 + base;
+        return getHeight() * getBase() / 2;
     }
 
     @Override
     public double calculatePerimeter() {
-        return 0;
+        return getBase() + getSide1() + getSide2();
     }
 
     @Override
