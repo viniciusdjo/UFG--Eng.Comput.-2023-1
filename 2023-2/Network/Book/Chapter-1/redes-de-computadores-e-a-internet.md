@@ -25,7 +25,7 @@
 * O protocolo IP especifica o formato dos pacotes que são enviados e recebidos entre roteadores e sistemas finais
 
 ## ***********************Uma descrição do serviço***********************
-* 
+
 
 ## *********************O que é um protocolo?*********************
 
@@ -48,7 +48,6 @@
 ## **************Uma rede de redes**************
 
 # Atraso, perda e vazão em redes de comutação de pacotes
-
 ---
 
 ## ***********Uma visão geral de atraso em redes de comutação de pacotes***********
@@ -59,21 +58,28 @@
 
 ## *******************************Vazão nas redes de computadores*******************************
 
-# Camadas de protocolo e seus modelos de serviço
-
+# *Camadas de protocolo e seus modelos de serviço*
 ---
 
 ## *********Arquitetura de camadas*********
 
 ## **************Encapsulamento**************
 
-# Redes sob ameaça
-
+# *Redes sob ameaça*
 ---
 
-# História das redes de computadores e da Internet
-
+# *História das redes de computadores e da Internet*
 ---
+
+## *Desenvolvimento da comutação de pacotes*
+
+## *Redes proprietárias e trabalho em rede*
+
+## *Proliferação de redes*
+
+## *A explosão da Internet*
+
+# *O novo milênio*
 
 # ******Resumo******
 

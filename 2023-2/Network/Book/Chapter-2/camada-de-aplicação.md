@@ -92,3 +92,17 @@ Exemplo:
 
 # *Aplicações P2P*
 ---
+
+## *Distribuição de arquivos P2P*
+
+## *Distributed Hash Tables (DHTs)*
+
+# *Programação de sockets*
+---
+
+## *Programação de sockets com UDP*
+
+## *Programação de sockets com TCP*
+
+# *Resumo*
+---
