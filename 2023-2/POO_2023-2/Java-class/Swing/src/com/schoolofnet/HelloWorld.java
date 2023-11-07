@@ -1,2 +1,5 @@
-package com.schoolofnet;public class HelloWorld {
+package com.schoolofnet;
+
+public class HelloWorld {
+
 }
