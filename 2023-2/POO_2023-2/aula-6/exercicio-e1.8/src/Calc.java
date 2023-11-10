@@ -3,26 +3,25 @@ import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Arrays;
 
 import javax.swing.*;
 
-import static java.awt.SystemColor.text;
-
 public class Calc {
+    private JTextField txtNum1;
     public Calc() {
         prepareGUI();
     }
-    private JTextField txtNum1;
-
     public static void main(String[] args) {
         Calc main = new Calc();
     }
 
     private void prepareGUI() {
+//        JFrame
         JFrame mainFrame = new JFrame();
         mainFrame.setBounds(100, 100, 400, 400);
         mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        mainFrame.setLayout(new GridLayout(4, 0));
+        mainFrame.setLayout(new FlowLayout());
             /*
             input
             combobox
@@ -30,25 +29,30 @@ public class Calc {
             button
              */
 
-        mainFrame.setLayout(new FlowLayout());
+//        JPanel
+        JPanel panel = new JPanel(new FlowLayout());
 
-        JComboBox op;
-
-
+//        JButton
         JButton btnCalc = new JButton("Calcule");
         btnCalc.setActionCommand("Action");
+
+//        JText Num1 and Num2
         txtNum1 = new JTextField(30);
         JTextField txtNum2 = new JTextField(30);
-        op = new JComboBox<>();
-        op.addItem("+");
-        op.addItem("-");
-        op.addItem("*");
-        op.addItem("/");
+
+//        JComboBox
+        JComboBox<Object> op = new JComboBox<>();
+        for (String s : Arrays.asList("+", "-", "*", "/")) {
+            op.addItem(s);
+        }
 
 
         btnCalc.addActionListener(new BtnHandler());
-        mainFrame.add(txtNum1);
-        mainFrame.add(txtNum2);
+        panel.add(txtNum1);
+        panel.add(op);
+        panel.add(txtNum2);
+
+        mainFrame.add(panel); //Add panel to JFrame
         mainFrame.add(btnCalc);
         mainFrame.setVisible(true);
     }
@@ -59,13 +63,11 @@ public class Calc {
         public void actionPerformed(ActionEvent e) {
             String command = e.getActionCommand();
 
-            switch(command) {
-                case "Action":
-                    System.out.println("My first event");
-                    JOptionPane.showMessageDialog(null, txtNum1);
-                    break;
-                default:
-                    System.out.println("Invalid Action");
+            if (command.equals("Action")) {
+                System.out.println("My first event");
+                JOptionPane.showMessageDialog(null, txtNum1.getText());
+            } else {
+                System.out.println("Invalid Action");
             }
         }
 
