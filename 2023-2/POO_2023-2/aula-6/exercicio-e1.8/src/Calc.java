@@ -1,6 +1,5 @@
 
 import java.awt.FlowLayout;
-import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Arrays;
@@ -67,26 +66,32 @@ public class Calc {
             switch (command) {
                 case "Calc":
                     if (txtNum1.getText() != null && txtNum2.getText() != null && op.getSelectedItem() != null) {
-                        Integer num1 = Integer.parseInt(txtNum1.getText());
-                        Integer num2 = Integer.parseInt(txtNum2.getText());
+                        try {
+                            Integer num1 = Integer.parseInt(txtNum1.getText());
+                            Integer num2 = Integer.parseInt(txtNum2.getText());
 
-                        String opSelected = (String) op.getSelectedItem();
+                            String opSelected = (String) op.getSelectedItem();
 
-                        switch (opSelected) {
-                            case "+":
-                                JOptionPane.showMessageDialog(null, num1 + num2);
-                                break;
-                            case "-":
-                                JOptionPane.showMessageDialog(null, num1 - num2);
-                                break;
-                            case "*":
-                                JOptionPane.showMessageDialog(null, num1 * num2);
-                                break;
-                            case "/":
-                                JOptionPane.showMessageDialog(null, num1 / num2);
-                                break;
-                            default:
-                                System.out.println("Invalid Action");
+                            switch (opSelected) {
+                                case "+":
+                                    JOptionPane.showMessageDialog(null, num1 + num2);
+                                    break;
+                                case "-":
+                                    JOptionPane.showMessageDialog(null, num1 - num2);
+                                    break;
+                                case "*":
+                                    JOptionPane.showMessageDialog(null, num1 * num2);
+                                    break;
+                                case "/":
+                                    JOptionPane.showMessageDialog(null, num1 / num2);
+                                    break;
+                                default:
+                                    System.out.println("Invalid Action");
+                            }
+                        } catch (NumberFormatException ex) {
+                            JOptionPane.showMessageDialog(null, "Entrada inválida. Certifique-se de inserir números válidos.", "Erro", JOptionPane.ERROR_MESSAGE);
+                        } catch (ArithmeticException ex) {
+                            JOptionPane.showMessageDialog(null, "Erro: Divisão por zero", "Erro", JOptionPane.ERROR_MESSAGE);
                         }
                     }
                     break;
