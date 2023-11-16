@@ -11,7 +11,10 @@ public class Calc {
     public double times() {
         return n1*n2;
     }
-    public double div() {
+    public double div()throws ArithmeticException{
+        if (n2 == 0) {
+            throw new ArithmeticException("Division by zero");
+        }
         return (double) n1 /n2;
     }
 }
