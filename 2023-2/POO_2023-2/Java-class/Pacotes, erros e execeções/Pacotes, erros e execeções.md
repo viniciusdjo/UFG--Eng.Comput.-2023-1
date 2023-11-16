@@ -231,3 +231,67 @@ public class TesteExcecao {
 ```
 # *Throws e Throw*
 ---
+
+* Declarar a Exceção com a palavra **throws**
+* A declaração **throws** é obrigatória em métodos e construtores que deixam de capturar uma ou mais exceções (to tipo CE) que ocorrem em seu interior
+ ```java
+public void m() throws Excecao1, Excecao2 {...}
+public Circulo throws ExcecaoDeLimite {...}
+ ```
+
+* **throws** declara que o método pode provocar exceções do tipo declarado (ou de qualquer subtipo)
+ ```java
+public static void main (String args[]) throws ArrayIndexOutOfBoundsException {
+  int i=0;
+  String frases[] = {“um”,“dois”,“tres”};
+  while (i<4) {
+    i++
+  };
+}
+ ```
+## *Novas exceções*
+
+* É possível criar novas exceções criando subclasses de **Exception**
+```java
+public class ServerTimeOutException extends Exception
+{
+...
+}
+```
+* Para 'lançar' as próprias exceções, é necesário utilizar a palavra **throw**
+ ```java
+public connect( ) throws ServerTimeOutException
+{
+if (sucess == -1)
+  throw new ServerTimeOutException(“Impossível conectar”);
+}
+ ```
+
+ ### *DIFEREÇAS DO **throws e throw***
+
+ * **throws** declara que o método pode provocar exceções do tipo declarado. Não é obrigatório nas UE
+ * **throw** utilizado para 'lançar' uma exceção específica ou a sua própria exceção no meio do código
+  
+```java
+public void metodo() throws ExcecaoSimples {
+  try {
+    //Instruções
+  } catch (ExcecaoSimples ex) {
+    //faz alguma coisa para lidar com a exceção
+    throw ex; //relança exceção
+  }
+}
+```
+
+### *Exercícios*
+1. Altere as classes Teste e TesteLeitura para fazer uso da palavra reservada throws
+2. Criar uma classe Calculadora que realiza a divisão de dois números. Realize o tratamento de exceção adequado, fazendo uso de throws e throw
+3. Criar uma execeção própria DivisãoZeroException e utilizar o throw para lançá-la
+   
+<details>
+<summary>Resposta</summary>
+
+```java
+
+```
+</details>
