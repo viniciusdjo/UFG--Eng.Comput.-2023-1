@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public class Calculadora {
+import javax.swing.*;
+
+public class Calculadora {
+    private JPanel panel1;
+    private JButton calculeButton;
 }
