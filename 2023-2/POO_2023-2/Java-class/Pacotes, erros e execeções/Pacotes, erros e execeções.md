@@ -3,6 +3,7 @@
 
 ## *O conceito de pacotes*
 * Um pacote é: um conjunto de classes e interfaces relacionadas e outros pacotes que provê **acesso protegido** e **gerenciamento de espaço de nomes (namespaces)**
+  
 ![image1](image.png)
 
 ## *Acesso Protegido*
@@ -72,8 +73,7 @@ SubClasse | Sim | Sim | Não | Não
 Pacote | Sim | Sim | Sim | Não
 Geral | Sim | Não | Não | Não
 
-# *Exercícios 1*
----
+### *Exercícios*
 1. Criar a hierarquia de classes abaixo pertencentes ao pacote
 br.abctreinamentos.rh
 ![exer1](image-2.png)
