@@ -46,5 +46,42 @@ javax.xml: //classes e interfaces para manipulação de XML
 
 # *Importação de Pacotes Java*
 ---
+* Para se usar uma classe/interface que está dentro de um pacote, precisa-se referenciar o nome completo desse pacote no acesso à classe:
+  `com.hobnob.graphics.Triangulo objeto = new com.hobnob.graphics.Triangulo();`
+* Pode-se usar o comando **import** para simplificar a chamada à classe Triangulo
+  ```java
+  import com.hobnob.graphics.Triangulo; 
+  Triangulo objeto = new Triangulo();
+  ```
+* É possível importar as classes/interfaces de um pacote inteiro:
+  `import com.hobnob.graphics.*;`
 * Com o coringa "*" é possível importar todas as classes/interfaces que estão definidas em um pacote, **exceto os seus subpacotes**
-* Importar todas as classes
+* Importar todas as classes de um pacote não implica em perda de performance em tempo de execução. Contudo, importar de um em um é considerada uma boa prática, pois facilita a leitura do código para os outros desenvolvedores
+
+# *Controle de Acesso*
+---
+* Um membro de pacote só pode ser acessado por classes/interfaces declaradas no mesmo pacote
+* Quando o modificador de acesso é omitido, diz-se que o membro (atributos/métodos) é do tipo **package**
+* Todas as classes do mesmo pacote têm acesso aos atributos e métodos umas das outras
+
+## *Resumo de Visibilidade*
+**Visibilidade** | **public** | **protected** | **package (default)** | **private**
+--- | --- | --- | --- | ---
+Classe | Sim | Sim | Não | Sim
+SubClasse | Sim | Sim | Não | Não
+Pacote | Sim | Sim | Sim | Não
+Geral | Sim | Não | Não | Não
+
+# *Exercícios 1*
+---
+1. Criar a hierarquia de classes abaixo pertencentes ao pacote
+br.abctreinamentos.rh
+![exer1](image-2.png)
+
+<details>
+<summary>Resposta</summary>
+
+```java
+package br.abctreinamentos.rh;
+```
+</details>
