@@ -31,3 +31,24 @@
 ## *No caminho pro 4G: LTE*
 
 # *Gerenciamento da mobilidade: princípios*
+---
+
+## *Endereçamento*
+
+## *Roteamento para um nó móvel*
+
+# *IP Móvel*
+---
+
+# *Gerenciamento de mobilidade em redes celulares*
+---
+
+## *Roteando chamadas para um usuário móvel*
+
+## *Transferências (handoffs) em GSM*
+
+# *Redes sem fio e mobilidade*
+---
+
+# *Resumo*
+---

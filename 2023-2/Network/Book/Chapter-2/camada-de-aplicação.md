@@ -1,13 +1,53 @@
 # ***Princípios de Aplicações de Rede***
 ---
-
 ## *Arquiteturas de aplicação de rede*
 
+* **Arquitetura da aplicação**: é projetada pelo programador e determina como a aplicação é organizada nos vários sistemas finais
+* Duas arquiteturas mais utilizadas em aplicações modernas de rede: **cliente-servidor** ou **P2P**
+* **Arquitetura cliente-servidor**: o hospedeiro está sempre funcionando, denominado *servidor*, que atende as requisições de muitos outros hospedeiros, denominados *clientes*. 
+* Os clientes não se comunicam diretamente uns com os outros
+* Servidor tem endereço fixo, bem conhecido, denomidado endereço IP
+* É comum o uso de datacenter, que acomoda um grande número de hospedeiros para criar um servidor virtual que possa atender diversas requisições de diversos clientes
+* os provedores de serviços têm de pagar pelos custos de interconexão recorrente e largura de banda para o envio de dados a partir de seus datacenters.
+* **Arquitetura P2P:** 
+
 ## *Comunicação entre processos*
+
+* Um processo pode ser descrito como um programa que está rodando dentro de um sistema final.
+* Os processos em dois sistemas finais diferentes se comunicam trocando mensagens por meio da rede de computadores. Um processo originador cria e envia mensagens para a rede; um processo destinatário recebe-as e responde, devolvendo outras
+
+![A comunicação de uma aplicação de rede ocorre entre sistemas dinais na camada de aplicação](image-3.png)
+
+### Processos clientes e processos servidores
+
+* Uma aplicação de rede consiste em pares de processos que enviam mensagens uns para os outros por meio de uma rede.
+* Para cada par de processos comunicantes, normalmente chamamos um dos processos de cliente e o outro de servidor
+* No contexto de uma sessão de comunicação entre um par de processos, aquele que inicia a comunicação (isto é, o primeiro a contatar o outro no início da sessão) é rotulado de cliente. O que espera ser contatado para iniciar a sessão é o servidor.
+* Qualquer mensagem enviada de um processo para outro tem de passar pela rede subjacente. Um processo envia mensagens para a rede e recebe mensagens dela através de uma interface de software denominada **socket**.
+* **Socket:** Um socket é uma interface de programação utilizada para a comunicação entre processos em uma rede de computadores. Ele fornece um ponto de extremidade para a troca de dados, permitindo que programas em diferentes dispositivos se conectem, enviem e recebam informações. Sockets são essenciais para o desenvolvimento de aplicações que envolvem comunicação em rede, como transferência de arquivos, jogos online e acesso a serviços web.
+
+### A interface entre o processo e a rede de computadores
+
 
 ## *Serviços de transporte disponíveis para aplicações*
 
 ## *Serviços de transporte providos pela internet*
+
+* A internet (as redes TCP/IP) disponibiliza dois protocolos de transporte para aplicações: TCP e o UDP
+* A figura abaixo mostra os requisitos do serviço para algumas aplicações
+  
+  ![Requisitos de aplição de rede selecionadas](image-2.png)
+
+### Serviços do TCP
+
+* Serviço orientado para conexão + serviço confiável de transferência de dados
+* **Serviço orientado para conexão:** O TCP faz o cliente e o servidor trocarem informações de controle de camada de transporte antes que as mensagens de camada de aplicação comecem a fluir. Esse procedimento de apresentação, por assim dizer, alerta o cliente e o servidor, permitindo que eles se preparem para uma enxurrada de pacotes. Após a fase de apresentação, dizemos que existe uma conexão TCP entre os sockets dos dois processos. A conexão é full-duplex (simultânea), visto que os dois processos podem enviar mensagens um ao outro pela conexão ao mesmo tempo. Quando termina de enviar mensagens, a aplicação deve interromper a conexão.
+* **Serviço confiável de transporte:** Os processos comunicantes podem contar com o TCP para a entrega de todos os dados enviados sem erro e na ordem correta. Quando um lado da aplicação passa uma cadeia de bytes para dentro de um socket, pode contar com o TCP para entregar a mesma cadeia de dados ao socket receptor, sem falta de bytes nem bytes duplicados
+* O TCP também inclui um mecanismo de controle de congestionamento
+
+### Serviços do UDP
+* O UDP é um protocolo de transporte simplificado, leve, com um modelo de serviço minimalista. É um serviço não orientado para conexão; portanto, não há apresentação antes que os dois processos comecem a se comunicar. O UDP provê um serviço não confiável de transferência de dados — isto é, quando um processo envia uma mensagem para dentro de um socket UDP, o protocolo não oferece garantias de que a mensagem chegará ao processo receptor. Além do mais, mensagens que chegam de fato ao processo receptor podem chegar fora de ordem.
+* O UDP não inclui um mecanismo de controle de congestionamento; portanto, um processo originador pode bombear dados para dentro de uma camada abaixo (a de rede) à taxa que quiser.
 
 ## *Protocolos de camada de aplicação*
 
