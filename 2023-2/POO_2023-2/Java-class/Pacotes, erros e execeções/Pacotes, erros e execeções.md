@@ -77,14 +77,75 @@ Geral | Sim | Não | Não | Não
 1. Criar a hierarquia de classes abaixo pertencentes ao pacote
 br.abctreinamentos.rh
 ![exer1](image-2.png)
+2. Criar a classe **Universidade** pertencente ao pacote **br.abctreinamentos** que possui diversos **Funcionários**, com o método de classe *gerarRelatorioProfessoresMestreDoutores(...)*
+3. Criar a classe **Mec** - não pertencente ao pacote **br.abctreinamentos** - que fará a avaliação da **Universodade** em questão pelo método **avaliarEnsino(...)**.
 
 <details>
-<summary>Resposta</summary>
+<summary>Resposta 1</summary>
 
 ```java
-package br.abctreinamentos.rh;
+
 ```
 </details>
+
+<details>
+<summary>Resposta 2</summary>
+
+```java
+
+```
+</details>
+
+<details>
+<summary>Resposta 3</summary>
+
+```java
+
+```
+</details>
+
+## *Static Import*
+* Estende as funcionalidades do comando `import`, possibilitando que membros de classe (atributos e métodos) sejam chamados.
+* Código sem **Static Import**
+  
+```java
+int raio = 5;
+double comp = Math.PI*Math.pow(raio, 2);
+System.out.println("Comp. do circulo="+comp);
+```
+
+* Código com **Static Import**
+
+```java
+import static java.lang.Math.*;
+...
+int raio = 5;
+double comp = PI*pow(raio, 2);
+System.out.println("Comp. do circulo="+comp);
+```
+* **Observação:** Importações estáticas misturam os *namespace* das classes, podendo causar conflitos de nome e perder legibilidade.
+
+### *Exercício*
+
+1. Incluir na classe **Mec** o acesso ao método de classe *gerarRelatorioProfessoresMestresDoutores(...)*.
+2. Alterar a chamada a esse método fazendo-se uso da **importação estática**.
+
+<details>
+<summary>Resposta 1</summary>
+
+```java
+
+```
+</details>
+
+<details>
+<summary>Resposta 2</summary>
+
+```java
+
+```
+</details>
+
 
 # *Erros e Exceções*
 ---
