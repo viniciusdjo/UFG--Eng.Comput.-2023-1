@@ -22,11 +22,15 @@ In that way, we sort of reduce the problem to a single-variable derivative probl
 We call these kinds of derivative "partial derivative" because we're only taking the derivative of one part (variable) of the function at a time. Remember the definition of the derivative from single-variable calculus (aka the different quotient?) Let's adapt that definition so that it works for us for multivariable functions.
 We know that, if $z$ is a function defined in terms of $x$ and $y$, like $z=f(x,y)$, then 
     
-    * The partial derivative of $z$ with respect to $x$ and $y$ is
+The partial derivative of $z$ with respect to $x$ and $y$ is
   
-        $z_x= f_x(x,y)= \lim_{h \rightarrow 0} \frac{f(x+h,y) - f(x,y)}{h}$
+  $$
+  z_x= f_x(x,y)= \lim_{h \rightarrow 0} \frac{f(x+h,y) - f(x,y)}{h}
+  $$
 
-        $z_y= f_y(x,y)= \lim_{h \rightarrow 0} \frac{f(x, y+h) - f(x,y)}{h}$
+  $$
+  z_y= f_y(x,y)= \lim_{h \rightarrow 0} \frac{f(x, y+h) - f(x,y)}{h}
+  $$
 
 The difinition as we've written it here gives two different kinds of notation for the partial derivatives of $z: z_x or z_y$ and $f_x(x,y) or f_y(x,y)$. In fact, there are many ways you might see partial derivatives defined.
 * The partial derivatives of a function $z$ defined in terms of $x$ and $y$ could be written in all of these ways:
