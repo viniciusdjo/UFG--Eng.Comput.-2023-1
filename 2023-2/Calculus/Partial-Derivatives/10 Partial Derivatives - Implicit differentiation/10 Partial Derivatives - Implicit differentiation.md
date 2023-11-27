@@ -17,15 +17,21 @@ When we want to use implicit differentiation to find partial derivatives of mult
 
 *For multivariable functions in two variable:*
 
-$\frac{\partial y}{\partial x} = - \frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial y}}$
+$$
+\frac{\partial y}{\partial x} = - \frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial y}}
+$$
 
 *For multivariable functions in three variables:*
 
-$\frac{\partial z}{\partial x} = - \frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial z}}$
+$$
+\frac{\partial z}{\partial x} = - \frac{\frac{\partial F}{\partial x}}{\frac{\partial F}{\partial z}}
+$$
 
 and 
 
-$\frac{\partial z}{\partial y} = - \frac{\frac{\partial F}{\partial y}}{\frac{\partial F}{\partial z}}$
+$$
+\frac{\partial z}{\partial y} = - \frac{\frac{\partial F}{\partial y}}{\frac{\partial F}{\partial z}}
+$$
 
 Before we can use these formulas to find derivatives or partial derivatives of the original function, we'll need to rearrange it so that it's equal to 0, and then rename it $F(x,y)$ (for two variable functions) or $F(x,y,z)$ (for three variable functions).
 
