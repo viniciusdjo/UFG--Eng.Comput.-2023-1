@@ -36,6 +36,7 @@ $$
 Before we can use these formulas to find derivatives or partial derivatives of the original function, we'll need to rearrange it so that it's equal to 0, and then rename it $F(x,y)$ (for two variable functions) or $F(x,y,z)$ (for three variable functions).
 
 Let's try an example with a multivariable function in two variables
+
 ---
 
 **Example**
@@ -68,6 +69,7 @@ We'll plug the partial derivatives into the formula for the derivative of a mult
 This is the partial derivative of $xe^{2y}=x²-y³$
 
 Now we'll try an example with a multivariable function in three variables
+
 ---
 
 **Example**
