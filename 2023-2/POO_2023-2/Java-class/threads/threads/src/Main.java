@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 //        Instance MyThread
         MyThread thread1 = new MyThread();
 
@@ -9,6 +9,9 @@ public class Main {
 
 //        Execution
         thread1.start();
+        thread1.join(3000);
         thread2.start();
+
+        System.out.println(1/0);
     }
 }
