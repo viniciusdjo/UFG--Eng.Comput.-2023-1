@@ -192,3 +192,55 @@ As redes pessoais são fundamentais para conectar dispositivos em curta distânc
    - Artigo: ["Zigbee Technology: Overview, Characteristics, and Applications"](https://www.elprocus.com/zigbee-technology-overview-characteristics-applications/)
 
 Ambos Bluetooth e Zigbee têm características distintas que os tornam adequados para diferentes cenários. A escolha entre eles dependerá dos requisitos específicos da aplicação, como alcance, consumo de energia, topologia de rede e necessidades de largura de banda.
+
+## Estudo de Caso: Implantação de Redes sem Fio em um Hospital**
+
+**Cenário:**
+Imagine um hospital moderno que busca melhorar a eficiência operacional e a prestação de cuidados de saúde por meio da implementação de tecnologias sem fio. Neste caso, será explorada a utilização dos protocolos IEEE 802.11 (Wi-Fi) e IEEE 802.15 (Zigbee) para atender às diversas necessidades dentro do ambiente hospitalar.
+
+### IEEE 802.11 (Wi-Fi):
+
+**1. Conectividade de Dispositivos Móveis:**
+   - **Aplicações:** Permitir a conectividade sem fio para dispositivos móveis, como tablets e smartphones, utilizados por profissionais de saúde para acessar registros eletrônicos de pacientes, resultados de exames e comunicação instantânea.
+
+   - **Benefícios:** Mobilidade aumentada para profissionais de saúde, melhorando o tempo de resposta e a eficiência no atendimento ao paciente.
+
+   - **Referências:**
+     - Vídeo: ["Wi-Fi in Healthcare"](https://www.youtube.com/watch?v=N0v7l0BzFy4)
+     - Artigo: ["The Role of Wi-Fi in Healthcare: Current Uses and Future Directions"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6232730/)
+
+**2. Monitoramento Remoto:**
+   - **Aplicações:** Utilização de sensores e dispositivos de monitoramento sem fio para rastrear sinais vitais dos pacientes em tempo real.
+
+   - **Benefícios:** Melhoria na vigilância contínua, permitindo uma resposta rápida a alterações no estado do paciente.
+
+   - **Referências:**
+     - Vídeo: ["Wireless Health Monitoring System using IoT"](https://www.youtube.com/watch?v=SiGhPp1mp9s)
+     - Artigo: ["Wireless Health Monitoring System using Zigbee"](https://ieeexplore.ieee.org/document/8445909)
+
+### IEEE 802.15 (Zigbee):
+
+**1. Rastreamento de Ativos e Equipamentos:**
+   - **Aplicações:** Implantação de sensores Zigbee para rastrear a localização de equipamentos médicos, carrinhos de medicamentos e outros ativos hospitalares.
+
+   - **Benefícios:** Redução do tempo gasto procurando equipamentos, melhor gestão de ativos e otimização de processos.
+
+   - **Referências:**
+     - Vídeo: ["Asset Tracking with Zigbee"](https://www.youtube.com/watch?v=zoNInPL6-Gs)
+     - Artigo: ["Zigbee-Based Indoor Positioning System for Healthcare Environments"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5527897/)
+
+**2. Controle Ambiental:**
+   - **Aplicações:** Uso de dispositivos Zigbee para controlar o ambiente hospitalar, como iluminação e temperatura em quartos de pacientes.
+
+   - **Benefícios:** Personalização do ambiente de acordo com as necessidades do paciente, contribuindo para seu conforto e recuperação.
+
+   - **Referências:**
+     - Vídeo: ["Smart Hospitals using Zigbee Technology"](https://www.youtube.com/watch?v=Q-_fd6Y7F9Y)
+     - Artigo: ["Design of a ZigBee-Based WSN for Monitoring Environmental Parameters in a Smart Healthcare Environment"](https://www.mdpi.com/1424-8220/20/12/3449)
+
+**Resultados Gerais:**
+- Melhoria na eficiência operacional, proporcionando uma prestação de cuidados mais rápida e eficaz.
+- Aumento da mobilidade para a equipe médica e melhor gestão de ativos hospitalares.
+- Aumento na segurança e conforto dos pacientes através do monitoramento contínuo e controle ambiental.
+
+Este estudo de caso destaca como a combinação de IEEE 802.11 (Wi-Fi) e IEEE 802.15 (Zigbee) pode criar uma infraestrutura de rede sem fio completa e eficaz para atender às complexas demandas de um ambiente hospitalar moderno.
