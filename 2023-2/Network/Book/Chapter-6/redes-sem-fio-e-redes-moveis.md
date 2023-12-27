@@ -21,6 +21,7 @@ Pode-se classificar as redes sem fios de 2 modos:
 
 # *Características de enlaces e redes sem fio*
 ---
+![Características de enlaces de padrões selecionados de rede sem fio](https://github.com/viniciusdjo/UFG--Eng.Comput.-2023-1/assets/136587824/86a62e4d-076d-4d91-b746-64bf55dc610a)
 
 ## *CDMA*
 
