@@ -98,3 +98,32 @@ O IEEE 802.15 é um conjunto de padrões para redes sem fio de curto alcance, in
 - Livro: "Wireless Sensor Networks: Principles, Design and Applications" de Alberto Cerpa e David Estrin.
 - Vídeo: ["Bluetooth and IEEE 802.15.1"](https://www.youtube.com/watch?v=JrmmzYDiFs0)
 - Artigo: ["ZigBee: A Low Power Wireless Technology for Industrial Applications"](https://ieeexplore.ieee.org/document/1641341)
+
+## Comparação entre IEEE 802.11 e IEEE 802.15
+
+Ambos os padrões, IEEE 802.11 e IEEE 802.15, são essenciais para comunicações sem fio, mas diferem em termos de aplicação, alcance, topologia de rede, consumo de energia e outras características. Vamos analisar detalhadamente as diferenças e semelhanças entre eles:
+
+1. **Aplicações e Escopo:**
+   - **IEEE 802.11:** Principalmente utilizado para redes locais sem fio (WLANs) e conectividade à Internet sem fio. Aplicações incluem Wi-Fi em residências, escritórios, e espaços públicos.
+   - **IEEE 802.15:** Projetado para redes de curto alcance, incluindo redes pessoais sem fio (WPANs) e sensores sem fio. Exemplos incluem Bluetooth e Zigbee.
+
+2. **Alcance e Frequência:**
+   - **IEEE 802.11:** Opera em faixas de frequência de 2,4 GHz e/ou 5 GHz, proporcionando maior alcance em comparação com o IEEE 802.15.
+   - **IEEE 802.15:** Pode operar em diferentes faixas de frequência, como 2,4 GHz (Bluetooth e Zigbee) e 868/915 MHz (Zigbee), mas geralmente tem um alcance mais curto em comparação com o IEEE 802.11.
+
+3. **Topologia de Rede:**
+   - **IEEE 802.11:** Suporta topologias de infraestrutura (conexão a pontos de acesso) e ad-hoc (comunicação direta entre dispositivos).
+   - **IEEE 802.15:** Oferece suporte a várias topologias, incluindo ponto a ponto, ponto a multiponto e redes mesh, dependendo do padrão específico.
+
+4. **Consumo de Energia:**
+   - **IEEE 802.11:** Pode ser relativamente mais consumidor de energia, especialmente em dispositivos que requerem comunicação constante.
+   - **IEEE 802.15:** Projetado para otimizar o consumo de energia, sendo frequentemente utilizado em dispositivos alimentados por bateria, como sensores sem fio.
+
+5. **Velocidade de Transmissão:**
+   - **IEEE 802.11:** Oferece taxas de transmissão mais altas, especialmente nas versões mais recentes como 802.11ax (Wi-Fi 6).
+   - **IEEE 802.15:** Geralmente possui taxas de transmissão mais baixas em comparação com o IEEE 802.11, mas é suficiente para muitas aplicações de sensores e comunicação de curto alcance.
+
+**Referências:**
+- Vídeo: ["Wi-Fi 6 and 5G: What to Expect"](https://www.youtube.com/watch?v=rs62aK3-6qE)
+- Vídeo: ["Bluetooth vs Zigbee vs Z-Wave vs Thread vs Wi-Fi vs Ethernet - What's the difference?"](https://www.youtube.com/watch?v=fzeylkX-4GA)
+- Artigo: ["A Survey on Wireless Sensor Networks: Technologies, Protocols, and Applications"](https://www.hindawi.com/journals/js/2014/357149/)
