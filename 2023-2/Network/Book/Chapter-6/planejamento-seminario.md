@@ -151,3 +151,44 @@ Ambos os padrões, IEEE 802.11 e IEEE 802.15, são essenciais para comunicaçõe
 2. **Zigbee 3.0:**
    - O Zigbee Alliance lançou o Zigbee 3.0 para unificar e aprimorar os padrões Zigbee anteriores, proporcionando uma interoperabilidade aprimorada entre dispositivos Zigbee de diferentes fabricantes.
    - Artigo: ["Zigbee 3.0: What It Is and Why It Matters"](https://www.iotforall.com/zigbee-3-0)
+
+## Redes pessoais
+
+**Redes Pessoais: Bluetooth e Zigbee**
+
+As redes pessoais são fundamentais para conectar dispositivos em curta distância, sendo essenciais em contextos como automação residencial, saúde, entretenimento e Internet das Coisas (IoT). Dois dos protocolos mais proeminentes nesse domínio são Bluetooth e Zigbee.
+
+**Bluetooth:**
+
+1. **Funcionalidades:**
+   - O Bluetooth é um padrão de comunicação sem fio projetado para conexão de curto alcance entre dispositivos. Ele oferece suporte a diversos perfis, como áudio, transferência de arquivos, teclados e mouses, além de LE (Low Energy) para aplicações de baixo consumo de energia.
+
+2. **Topologia e Alcance:**
+   - A topologia do Bluetooth pode ser ponto a ponto ou ponto a multiponto, permitindo a conexão de um dispositivo central a vários dispositivos periféricos. O alcance típico é de até 10 metros, embora a versão Bluetooth 5.0 tenha ampliado isso para até 100 metros.
+
+3. **Segurança:**
+   - Bluetooth implementa recursos robustos de segurança, como emparelhamento seguro e criptografia de dados. As versões mais recentes, como Bluetooth 5.2, incorporam aprimoramentos contínuos nesse aspecto.
+
+**Referências para Bluetooth:**
+   - Vídeo: ["Bluetooth Explained: Bluetooth 5 and Beyond"](https://www.youtube.com/watch?v=ev9QAFON8q4)
+   - Artigo: ["The Ultimate Guide to Bluetooth Technology: Advantages and Challenges"](https://www.cio.com/article/3237547/the-ultimate-guide-to-bluetooth-technology-advantages-and-challenges.html)
+
+**Zigbee:**
+
+1. **Funcionalidades:**
+   - Zigbee é um protocolo de comunicação sem fio otimizado para aplicações de baixo consumo de energia e comunicação de curto alcance. Ele é especialmente popular em ambientes de automação residencial e industrial.
+
+2. **Topologia e Alcance:**
+   - Zigbee suporta topologias de rede como ponto a ponto, ponto a multiponto e redes mesh. As redes mesh permitem que os dispositivos se comuniquem entre si, estendendo o alcance. O alcance típico é de 10 a 100 metros, dependendo das condições do ambiente.
+
+3. **Consumo de Energia:**
+   - Zigbee é conhecido por seu baixo consumo de energia, o que o torna ideal para dispositivos alimentados por bateria. Ele entra em modo de baixo consumo quando não está ativamente transmitindo dados.
+
+4. **Segurança:**
+   - Zigbee inclui recursos de segurança, como criptografia AES para proteger a comunicação entre os dispositivos. A versão Zigbee 3.0 trouxe melhorias significativas na interoperabilidade e segurança.
+
+**Referências para Zigbee:**
+   - Vídeo: ["Zigbee Explained: What You Need to Know!"](https://www.youtube.com/watch?v=1sSNvZ5Lxyw)
+   - Artigo: ["Zigbee Technology: Overview, Characteristics, and Applications"](https://www.elprocus.com/zigbee-technology-overview-characteristics-applications/)
+
+Ambos Bluetooth e Zigbee têm características distintas que os tornam adequados para diferentes cenários. A escolha entre eles dependerá dos requisitos específicos da aplicação, como alcance, consumo de energia, topologia de rede e necessidades de largura de banda.
