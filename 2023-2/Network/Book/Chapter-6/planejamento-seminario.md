@@ -9,7 +9,7 @@
 
 ## Aplicações de IEEE 802.11 e IEEE 802.15
 
-**IEEE 802.11:**
+### **IEEE 802.11:**
 
 O IEEE 802.11 é um conjunto de padrões para redes locais sem fio (WLANs). Ele define as especificações para as camadas física (PHY) e de controle de acesso ao meio (MAC) das redes sem fio. Aqui estão algumas das aplicações mais comuns do IEEE 802.11:
 
@@ -29,7 +29,7 @@ O IEEE 802.11 é um conjunto de padrões para redes locais sem fio (WLANs). Ele 
 - Livro: "802.11 Wireless Networks: The Definitive Guide" de Matthew Gast.
 - Artigo: ["IEEE 802.11ax: The Sixth Generation of Wi-Fi"](https://www.cio.com/article/3237548/ieee-802-11ax-the-sixth-generation-of-wi-fi.html)
 
-**IEEE 802.15:**
+### **IEEE 802.15:**
 
 O IEEE 802.15 é um conjunto de padrões para redes sem fio de curto alcance. Ele inclui especificações para redes pessoais sem fio (WPANs) e é conhecido por várias versões, incluindo IEEE 802.15.1 (Bluetooth) e IEEE 802.15.4. Aqui estão algumas aplicações comuns:
 
@@ -50,3 +50,51 @@ O IEEE 802.15 é um conjunto de padrões para redes sem fio de curto alcance. El
 - Artigo: ["A Survey on IEEE 802.15.4 Standard"](https://www.hindawi.com/journals/tswj/2014/218568/)
 
 ## Descrição das funcionalidades
+
+### **IEEE 802.11:**
+
+O IEEE 802.11, também conhecido como Wi-Fi, é um conjunto de padrões para redes locais sem fio. As principais funcionalidades incluem:
+
+1. **Camada Física (PHY):**
+   - O IEEE 802.11 opera em várias faixas de frequência, incluindo 2,4 GHz e 5 GHz. A camada PHY lida com a modulação do sinal, taxa de transmissão e técnicas de propagação.
+
+2. **Controle de Acesso ao Meio (MAC):**
+   - A camada MAC gerencia o acesso ao meio compartilhado, evitando colisões entre os dispositivos. Isso é feito usando o protocolo CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance).
+
+3. **Modos de Operação:**
+   - O IEEE 802.11 suporta modos de operação como infraestrutura (conexão a pontos de acesso) e ad-hoc (comunicação direta entre dispositivos).
+
+4. **Segurança:**
+   - Diversos mecanismos de segurança são implementados, incluindo WEP, WPA, e WPA2/WPA3 para criptografia e autenticação.
+
+5. **QoS (Qualidade de Serviço):**
+   - O IEEE 802.11e introduz melhorias na qualidade de serviço, permitindo priorização de tráfego para aplicações sensíveis ao tempo, como chamadas de voz.
+
+**Referências para IEEE 802.11:**
+- Livro: "802.11 Wireless Networks: The Definitive Guide" de Matthew Gast.
+- Vídeo: ["Wi-Fi Fundamentals"](https://www.youtube.com/watch?v=9C2iUoG6p2g)
+- Artigo: ["Understanding IEEE 802.11 MAC Parameters"](https://ieeexplore.ieee.org/document/5191771)
+
+### **IEEE 802.15:**
+
+O IEEE 802.15 é um conjunto de padrões para redes sem fio de curto alcance, incluindo tecnologias como Bluetooth e Zigbee. Principais funcionalidades:
+
+1. **Camada Física (PHY):**
+   - O IEEE 802.15 oferece suporte a diferentes camadas PHY dependendo do padrão específico. Por exemplo, o Bluetooth opera em 2,4 GHz, enquanto o Zigbee pode operar em 2,4 GHz ou 868/915 MHz.
+
+2. **Controle de Acesso ao Meio (MAC):**
+   - O controle de acesso ao meio é gerenciado pela camada MAC, que pode incluir esquemas como TDMA (Time Division Multiple Access) no caso do Zigbee.
+
+3. **Topologias de Rede:**
+   - Suporta várias topologias, incluindo ponto a ponto, ponto a multiponto e redes mesh, dependendo da aplicação específica.
+
+4. **Consumo de Energia Eficiente:**
+   - Muitos padrões dentro do IEEE 802.15 são projetados para otimizar o consumo de energia, permitindo a operação eficiente em dispositivos alimentados por bateria.
+
+5. **Segurança:**
+   - Inclui mecanismos de segurança, como autenticação e criptografia, dependendo do padrão específico.
+
+**Referências para IEEE 802.15:**
+- Livro: "Wireless Sensor Networks: Principles, Design and Applications" de Alberto Cerpa e David Estrin.
+- Vídeo: ["Bluetooth and IEEE 802.15.1"](https://www.youtube.com/watch?v=JrmmzYDiFs0)
+- Artigo: ["ZigBee: A Low Power Wireless Technology for Industrial Applications"](https://ieeexplore.ieee.org/document/1641341)
