@@ -127,3 +127,27 @@ Ambos os padrões, IEEE 802.11 e IEEE 802.15, são essenciais para comunicaçõe
 - Vídeo: ["Wi-Fi 6 and 5G: What to Expect"](https://www.youtube.com/watch?v=rs62aK3-6qE)
 - Vídeo: ["Bluetooth vs Zigbee vs Z-Wave vs Thread vs Wi-Fi vs Ethernet - What's the difference?"](https://www.youtube.com/watch?v=fzeylkX-4GA)
 - Artigo: ["A Survey on Wireless Sensor Networks: Technologies, Protocols, and Applications"](https://www.hindawi.com/journals/js/2014/357149/)
+
+## Evolução
+
+**IEEE 802.11 (Wi-Fi):**
+
+1. **Wi-Fi 6 (IEEE 802.11ax):**
+   - Wi-Fi 6 é a mais recente iteração do padrão 802.11. Introduz melhorias significativas na eficiência espectral, aumento de capacidade, desempenho em ambientes densos e suporte a tecnologias como OFDMA (Orthogonal Frequency Division Multiple Access) para melhorar o throughput.
+   - Vídeo: ["Wi-Fi 6 Explained"](https://www.youtube.com/watch?v=ciMkRJ2GnKM)
+   - Artigo: ["Wi-Fi 6: What's Different, and Why it Matters"](https://www.cio.com/article/3433645/wi-fi-6-what-s-different-and-why-it-matters.html)
+
+2. **Wi-Fi 6E:**
+   - Uma extensão do Wi-Fi 6, o Wi-Fi 6E opera na faixa de 6 GHz, oferecendo mais largura de banda e menos interferência. Essa extensão visa melhorar ainda mais o desempenho em ambientes saturados.
+   - Artigo: ["Wi-Fi 6E: What It Is and Why It’s Essential for the Future of Connectivity"](https://www.extremetech.com/extreme/318006-wi-fi-6e-what-it-is-and-why-its-essential-for-the-future-of-connectivity)
+
+**IEEE 802.15:**
+
+1. **Bluetooth LE (Low Energy):**
+   - Enquanto o IEEE 802.15.1 (Bluetooth clássico) ainda é amplamente usado, a versão Bluetooth LE (também conhecida como Bluetooth Smart) foi introduzida para dispositivos que requerem baixo consumo de energia, como dispositivos IoT e sensores.
+   - Vídeo: ["Bluetooth Low Energy (BLE) Explained"](https://www.youtube.com/watch?v=YQY4R7MgR_c)
+   - Artigo: ["Bluetooth 5 vs BLE vs Bluetooth 4.2 and Classic Bluetooth"](https://www.electronicwings.com/nodemcu/bluetooth-5-vs-ble-vs-bluetooth-42-and-classic-bluetooth)
+
+2. **Zigbee 3.0:**
+   - O Zigbee Alliance lançou o Zigbee 3.0 para unificar e aprimorar os padrões Zigbee anteriores, proporcionando uma interoperabilidade aprimorada entre dispositivos Zigbee de diferentes fabricantes.
+   - Artigo: ["Zigbee 3.0: What It Is and Why It Matters"](https://www.iotforall.com/zigbee-3-0)
